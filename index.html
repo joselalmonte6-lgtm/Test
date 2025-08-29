@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Joe Student — Resume</title>
+  <meta name="description" content="Resume of Joe Student — Contact, experience, education, projects, and skills." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-grid">
+      <div class="hero">
+        <img src="images/profile.jpg" alt="Professional portrait of Joe Student" class="profile-photo" width="160" height="160">
+        <div>
+          <h1 id="name">Joe Student</h1>
+          <p class="contact">
+            <a href="mailto:joe.student@ucf.edu">joe.student@ucf.edu</a> ·
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
+          </p>
+          <p class="objective">Professional objective: Seeking an IT support role leveraging helpdesk and Active Directory experience to improve onboarding and security.</p>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#awards">Awards</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <section id="education" aria-labelledby="edu-heading">
+      <h2 id="edu-heading">Education</h2>
+      <article class="education-item">
+        <h3>B.S. in Information Technology</h3>
+        <p>University of Central Florida — Expected Graduation: May 2026</p>
+        <ul>
+          <li>Relevant coursework: Web Development, Networking, Security</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="experience" aria-labelledby="exp-heading">
+      <h2 id="exp-heading">Relevant Work Experience</h2>
+
+      <article class="job" aria-labelledby="job1">
+        <h3 id="job1">IT Intern — Conti Federal</h3>
+        <p class="meta">May 2025 — Present</p>
+        <p class="job-desc">Handled service desk tickets, new hire PC setups, basic Azure Sentinel incident triage, and Active Directory account creation (limited privileges).</p>
+        <ul>
+          <li>Created and updated documentation for new hire provisioning.</li>
+          <li>Assisted with account provisioning and group policy checks.</li>
+        </ul>
+      </article>
+
+      <!-- If you have no experience, remove this section or add internships/volunteer -->
+    </section>
+
+    <section id="projects" aria-labelledby="proj-heading">
+      <h2 id="proj-heading">Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3><a href="project1.html">Project Title One</a></h3>
+          <figure>
+            <img src="images/project1-thumb.jpg" alt="Screenshot of Project One" width="400" height="240">
+            <figcaption>Short caption for project image</figcaption>
+          </figure>
+          <p>One-line summary: A short description of the project and what it does.</p>
+          <p><strong>Skills:</strong> HTML, CSS, JavaScript, Git</p>
+        </article>
+
+        <article class="project-card">
+          <h3><a href="project2.html">Project Title Two</a></h3>
+          <figure>
+            <img src="images/project2-thumb.jpg" alt="Screenshot of Project Two" width="400" height="240">
+            <figcaption>Short caption for project image</figcaption>
+          </figure>
+          <p>One-line summary: Short description of the project and its goal.</p>
+          <p><strong>Skills:</strong> React (local demo), API integration, accessibility testing</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <ul class="skills-list">
+        <li>Active Directory — user provisioning</li>
+        <li>Service Desk / Ticketing (ITSM)</li>
+        <li>HTML5, CSS3, Responsive Design</li>
+        <li>Azure Sentinel (basic triage)</li>
+      </ul>
+    </section>
+
+    <section id="awards" aria-labelledby="awards-heading">
+      <h2 id="awards-heading">Awards & Honors</h2>
+      <p>If none, you may delete this section.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© <span id="year"></span> Joe Student — <a href="https://github.com/yourusername/yourrepo" target="_blank" rel="noopener">Source on GitHub</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
