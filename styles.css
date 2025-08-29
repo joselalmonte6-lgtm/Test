@@ -1,0 +1,118 @@
+/* styles.css - simple, responsive, accessible */
+/* Basic resets and sensible defaults */
+:root{
+  --bg: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --accent: #0b74de;
+  --max-width: 1000px;
+  --gap: 1rem;
+  --container-padding: 1rem;
+  --focus: 3px dashed #ffbf47;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  color:var(--text);
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+}
+
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:var(--container-padding);
+}
+
+/* Skip link */
+.skip-link{
+  position:absolute;
+  left:-999px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+.skip-link:focus{
+  left:var(--container-padding);
+  top:var(--container-padding);
+  width:auto;
+  height:auto;
+  padding:.5rem .75rem;
+  background:#000;
+  color:#fff;
+  z-index:999;
+}
+
+/* Header */
+.site-header{
+  border-bottom:1px solid #e5e7eb;
+  background:linear-gradient(90deg,#f9fafb, #fff);
+}
+.header-grid{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:var(--gap);
+}
+.hero{
+  display:flex;
+  gap:var(--gap);
+  align-items:center;
+}
+.profile-photo{
+  border-radius:12px;
+  object-fit:cover;
+  display:block;
+  box-shadow:0 4px 8px rgba(0,0,0,.05);
+}
+
+/* Nav */
+.main-nav ul, .main-nav li{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+.main-nav a{
+  text-decoration:none;
+  color:var(--accent);
+  font-weight:600;
+}
+
+/* Main content */
+main{padding:1.25rem 0}
+h1,h2,h3{margin:.25rem 0 .5rem 0}
+p{margin:.25rem 0 .75rem 0}
+.meta{font-size:.9rem;color:var(--muted)}
+
+/* Projects grid */
+.projects-grid{
+  display:grid;
+  gap:1rem;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+}
+
+/* Skills */
+.skills-list{display:flex;flex-wrap:wrap;gap:.5rem}
+.skills-list li{background:#f3f4f6;padding:.4rem .6rem;border-radius:8px;font-size:.95rem}
+
+/* Footer */
+.site-footer{border-top:1px solid #e5e7eb;padding:.75rem 0;color:var(--muted);font-size:.95rem}
+
+/* Accessibility: visible focus */
+a:focus, button:focus, input:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(11,116,222,0.15);
+  border-radius:6px;
+}
+
+/* Responsive tweaks */
+@media (max-width:760px){
+  .header-grid{flex-direction:column;align-items:flex-start}
+  .hero{align-items:flex-start}
+}
