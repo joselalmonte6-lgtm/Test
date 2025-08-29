@@ -3,117 +3,178 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Joe Student — Resume</title>
-  <meta name="description" content="Resume of Joe Student — Contact, experience, education, projects, and skills." />
+  <title>Jose Almonte — Resume</title>
+  <meta name="description" content="Resume of Jose Almonte — IT intern, QA, support tech. Conti Federal, Dave & Busters." />
   <link rel="stylesheet" href="css/styles.css" />
+  <!-- Use a clean system font stack; you can swap to Google Fonts if you prefer -->
 </head>
 <body>
-  <!-- Skip link for keyboard users -->
   <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header" role="banner">
-    <div class="container header-grid">
-      <div class="hero">
-        <img src="images/profile.jpg" alt="Professional portrait of Joe Student" class="profile-photo" width="160" height="160">
-        <div>
-          <h1 id="name">Joe Student</h1>
+    <div class="container header-inner">
+      <div class="profile">
+        <img src="images/profile.jpg" alt="Jose Almonte — professional portrait" class="profile-photo" width="160" height="160">
+        <div class="profile-info">
+          <h1 id="name">Jose Almonte</h1>
           <p class="contact">
-            <a href="mailto:joe.student@ucf.edu">joe.student@ucf.edu</a> ·
-            <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:joselalmonte6@gmail.com">joselalmonte6@gmail.com</a>
+            <span aria-hidden="true"> · </span>
+            <a href="tel:+14077155801">407-715-5801</a>
           </p>
-          <p class="objective">Professional objective: Seeking an IT support role leveraging helpdesk and Active Directory experience to improve onboarding and security.</p>
+          <p class="contact muted">Kissimmee, Florida · <a href="https://www.linkedin.com/in/jose-almonte-51231827a" target="_blank" rel="noopener">LinkedIn</a></p>
+          <p class="objective">Professional objective: Seeking an entry-level IT/Support role leveraging helpdesk experience, Active Directory knowledge, and troubleshooting skills to deliver reliable technical support.</p>
+          <p class="resume-links">
+            <a class="btn-outline" href="documents/Jose-Almonte-Resume.pdf" download>Download PDF Resume</a>
+            <a class="btn-solid" href="documents/Jose-Almonte-Resume.pdf" target="_blank" rel="noopener">Open PDF</a>
+          </p>
         </div>
       </div>
 
-      <nav class="main-nav" aria-label="Main navigation">
+      <nav class="top-nav" aria-label="Main navigation">
         <ul>
           <li><a href="#education">Education</a></li>
+          <li><a href="#certs">Certifications</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#awards">Awards</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main id="main" class="container" role="main">
-    <section id="education" aria-labelledby="edu-heading">
+  <main id="main" class="container">
+    <section id="education" class="card" aria-labelledby="edu-heading">
       <h2 id="edu-heading">Education</h2>
-      <article class="education-item">
-        <h3>B.S. in Information Technology</h3>
-        <p>University of Central Florida — Expected Graduation: May 2026</p>
-        <ul>
-          <li>Relevant coursework: Web Development, Networking, Security</li>
-        </ul>
-      </article>
-    </section>
-
-    <section id="experience" aria-labelledby="exp-heading">
-      <h2 id="exp-heading">Relevant Work Experience</h2>
-
-      <article class="job" aria-labelledby="job1">
-        <h3 id="job1">IT Intern — Conti Federal</h3>
-        <p class="meta">May 2025 — Present</p>
-        <p class="job-desc">Handled service desk tickets, new hire PC setups, basic Azure Sentinel incident triage, and Active Directory account creation (limited privileges).</p>
-        <ul>
-          <li>Created and updated documentation for new hire provisioning.</li>
-          <li>Assisted with account provisioning and group policy checks.</li>
-        </ul>
-      </article>
-
-      <!-- If you have no experience, remove this section or add internships/volunteer -->
-    </section>
-
-    <section id="projects" aria-labelledby="proj-heading">
-      <h2 id="proj-heading">Projects</h2>
-      <div class="projects-grid">
-        <article class="project-card">
-          <h3><a href="project1.html">Project Title One</a></h3>
-          <figure>
-            <img src="images/project1-thumb.jpg" alt="Screenshot of Project One" width="400" height="240">
-            <figcaption>Short caption for project image</figcaption>
-          </figure>
-          <p>One-line summary: A short description of the project and what it does.</p>
-          <p><strong>Skills:</strong> HTML, CSS, JavaScript, Git</p>
-        </article>
-
-        <article class="project-card">
-          <h3><a href="project2.html">Project Title Two</a></h3>
-          <figure>
-            <img src="images/project2-thumb.jpg" alt="Screenshot of Project Two" width="400" height="240">
-            <figcaption>Short caption for project image</figcaption>
-          </figure>
-          <p>One-line summary: Short description of the project and its goal.</p>
-          <p><strong>Skills:</strong> React (local demo), API integration, accessibility testing</p>
-        </article>
+      <div class="two-col">
+        <div>
+          <h3>University of Central Florida</h3>
+          <p class="muted">Bachelor of Science in Information Technology — Expected December 2025</p>
+          <p class="muted">Current GPA: 3.7</p>
+        </div>
+        <div>
+          <h3>Professional & Technical High School <small>(Dual Enrollment at Valencia College)</small></h3>
+          <p class="muted">Graduated May 2023 · GPA: 3.8</p>
+        </div>
       </div>
     </section>
 
-    <section id="skills" aria-labelledby="skills-heading">
-      <h2 id="skills-heading">Skills</h2>
-      <ul class="skills-list">
-        <li>Active Directory — user provisioning</li>
-        <li>Service Desk / Ticketing (ITSM)</li>
-        <li>HTML5, CSS3, Responsive Design</li>
-        <li>Azure Sentinel (basic triage)</li>
+    <section id="certs" class="card" aria-labelledby="cert-heading">
+      <h2 id="cert-heading">Certifications & Coursework</h2>
+      <ul class="bullets">
+        <li><strong>CompTIA:</strong> A+, Network+, <strong>Security+</strong></li>
+        <li>Computer Science I; Computer Logic & Organization; Technical Writing</li>
       </ul>
     </section>
 
-    <section id="awards" aria-labelledby="awards-heading">
-      <h2 id="awards-heading">Awards & Honors</h2>
-      <p>If none, you may delete this section.</p>
+    <section id="experience" class="card" aria-labelledby="exp-heading">
+      <h2 id="exp-heading">Professional Experience</h2>
+
+      <article class="job">
+        <h3>Conti Federal — IT Intern</h3>
+        <p class="meta">June 2024 – August 2024</p>
+        <ul class="bullets">
+          <li>Assisted the service desk: triaged tickets, configured new hire workstations, and provided desktop support.</li>
+          <li>Performed Active Directory tasks and participated in AD audit activities (limited privileges).</li>
+          <li>Created documentation for onboarding steps and basic troubleshooting guides.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Dave &amp; Busters — Support Technician</h3>
+        <p class="meta">March 2024 – Present</p>
+        <ul class="bullets">
+          <li>Repair and maintain building facilities, games, simulators, and technical equipment to ensure optimal player conditions.</li>
+          <li>Communicate with guests and managers to resolve issues, manage wait times, and ensure a smooth experience.</li>
+          <li>Maintain organization and restock merchandise while ensuring equipment functionality and safety.</li>
+        </ul>
+      </article>
+    </section>
+    
+      <article class="job">
+        <h3>Advon Commerce — QA Analyst</h3>
+        <p class="meta">June 2023 – March 2024</p>
+        <ul class="bullets">
+          <li>Performed QA testing and tracked defects using established workflow.</li>
+          <li>Conducted content reviews and provided iterative improvements based on feedback.</li>
+          <li>Maintained deadlines while ensuring high quality standards and attention to detail.</li>
+        </ul>
+      </article>
+
+    <section id="projects" class="card" aria-labelledby="proj-heading">
+      <h2 id="proj-heading">Projects</h2>
+      <p class="muted">(Placeholders — link each project to source, demo, or embed where possible)</p>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3><a href="project1.html">Project One — CLI Tool (placeholder)</a></h3>
+          <figure>
+            <img src="images/project1-thumb.jpg" alt="Screenshot of Project One CLI output" width="800" height="450">
+            <figcaption>CLI output screenshot</figcaption>
+          </figure>
+          <p class="muted">Short summary of what the tool does.</p>
+          <p class="project-links">
+            <a class="small-link" href="https://github.com/yourusername/project1" target="_blank" rel="noopener">Source</a>
+            <a class="small-link" href="https://replit.com/@yourusername/project1?embed=true" target="_blank" rel="noopener">Try demo</a>
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3><a href="project2.html">Project Two — Web Demo (placeholder)</a></h3>
+          <figure>
+            <img src="images/project2-thumb.jpg" alt="Screenshot of Project Two GUI" width="800" height="450">
+            <figcaption>GUI screenshot</figcaption>
+          </figure>
+          <p class="muted">Short summary of what this web project demonstrates.</p>
+          <p class="project-links">
+            <a class="small-link" href="https://github.com/yourusername/project2" target="_blank" rel="noopener">Source</a>
+            <a class="small-link" href="project2.html">Live demo</a>
+          </p>
+        </article>
+      </div>
+
+      <p class="muted small">Tip: For CLI projects, add screenshots and link to a Replit/Glitch/Heroku demo. For Python/Java CLI that can't run in-browser, provide clear usage instructions and a screenshot of sample output.</p>
+    </section>
+
+    <section id="skills" class="card" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills & Activities</h2>
+      <div class="two-col">
+        <div>
+          <h4>Technical</h4>
+          <ul class="tags">
+            <li>C</li><li>Python</li><li>Java</li><li>Active Directory</li><li>Azure Sentinel (basic)</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Other</h4>
+          <ul class="tags">
+            <li>Computer Assembly</li><li>English</li><li>Spanish</li>
+          </ul>
+        </div>
+      </div>
+
+      <h4 style="margin-top:1rem;">Extracurricular</h4>
+      <ul class="bullets">
+        <li>Society of Hispanic Professional Engineers — Member</li>
+        <li>Association for Computing Machinery — Member</li>
+        <li>KnightHacks — Member</li>
+        <li>Job Shadow: Shadowed IT Architect at NASA</li>
+      </ul>
+    </section>
+
+    <section class="card" aria-labelledby="footer-heading">
+      <h2 id="footer-heading">Notes</h2>
+      <p class="muted small">Make sure you replace all placeholder links (GitHub, Replit, images). Run WAVE and W3C validator before submission.</p>
     </section>
   </main>
 
-  <footer class="site-footer" role="contentinfo">
+  <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Joe Student — <a href="https://github.com/yourusername/yourrepo" target="_blank" rel="noopener">Source on GitHub</a></p>
+      <p class="muted small">© <span id="year"></span> Jose Almonte — <a href="https://github.com/yourusername/your-repo" target="_blank" rel="noopener">Source</a></p>
     </div>
   </footer>
 
   <script>
-    // set current year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
