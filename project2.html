@@ -10,31 +10,70 @@
   <a class="skip-link" href="#main">Skip to main content</a>
   <header class="site-header">
     <div class="container header-inner">
-      <h1>Project Two — Web Demo</h1>
-      <nav aria-label="Project navigation"><ul><li><a href="index.html">Back to Resume</a></li></ul></nav>
+      <h1>Project Two — Theater Inventory System (Hash Tables)</h1>
+      <nav aria-label="Project navigation">
+        <ul>
+          <li><a href="index.html">Back to Resume</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <main id="main" class="container">
     <article class="card">
       <h2>Description</h2>
-      <p>Replace with a description of the web project, framework used (if any), and your contributions.</p>
+      <p>
+        This project is a <strong>C program</strong> that simulates a theater’s inventory management system 
+        using a hash table with separate chaining. The program allows buying supplies, selling items, 
+        and updating item prices while maintaining accurate logs of inventory and cash flow. 
+        At the end of the simulation, it reports both the total cash on hand and the overall complexity 
+        of operations.
+      </p>
 
-      <h3>Live Demo</h3>
-      <p>If this is an HTML/CSS/JS project, you can embed it directly:</p>
-      <div class="embed-wrap">
-        <!-- Example iframe to an in-repo demo or external host -->
-        <iframe src="project2-demo/index.html" title="Project Two demo" sandbox="allow-scripts allow-same-origin" ></iframe>
-      </div>
+      <h3>Features</h3>
+      <ul class="bullets">
+        <li>Buy items from suppliers (tracks quantity and cost).</li>
+        <li>Sell items to customers (handles partial stock situations).</li>
+        <li>Update item sale prices dynamically.</li>
+        <li>Log transactions after each command.</li>
+        <li>Track both total cash balance and command complexity.</li>
+      </ul>
+
+      <h3>Technical Details</h3>
+      <ul class="bullets">
+        <li>Implemented in C with a hash table of size 300,007 using <em>separate chaining</em>.</li>
+        <li>Custom hash function: 
+          <code>res = (1151 * res + (word[i]-'a')) % size;</code>
+        </li>
+        <li>Used linked lists for collision resolution.</li>
+        <li>Data structures included <code>item</code>, <code>node</code>, and <code>hashtable</code>.</li>
+        <li>Operations run in amortized O(1) time.</li>
+      </ul>
+
+      <h3>Sample Input / Output</h3>
+      <pre>
+buy popcorn 1000 3000
+buy soda 2000 1000
+sell popcorn 50
+sell soda 100
+      </pre>
+      <pre>
+popcorn 950 96300
+soda 1900 96800
+      </pre>
 
       <h3>Skills Learned</h3>
       <ul class="bullets">
-        <li>Responsive layout</li>
-        <li>DOM manipulation and event handling</li>
+        <li>Hash table design and implementation in C</li>
+        <li>Memory management and pointer manipulation</li>
+        <li>Linked list data structures</li>
+        <li>File I/O and structured command parsing</li>
       </ul>
 
       <h3>Links</h3>
-      <p><a href="https://github.com/yourusername/project2" target="_blank" rel="noopener">Source on GitHub</a></p>
+      <p>
+        <a href="https://github.com/yourusername/project2" target="_blank" rel="noopener">Source on GitHub</a>
+      </p>
     </article>
   </main>
 </body>
