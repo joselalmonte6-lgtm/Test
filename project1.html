@@ -1,40 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Project 1 — Task Scheduling & PowerShell</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8">
+  <title>Project 1: Implementing Active Directory</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1>Project 1 — Task Scheduling & PowerShell</h1>
-      <nav><a href="index.html">← Back to Resume</a></nav>
-    </div>
+  <header>
+    <h1>Project 1: Implementing Active Directory</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="project1.html">Project 1</a>
+      <a href="project2.html">Project 2</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <section class="card">
+  <main>
+    <section>
       <h2>Overview</h2>
-      <p>This project demonstrates automating repetitive IT tasks using Windows Task Scheduler and PowerShell scripting.</p>
-      <ul class="bullets">
-        <li>Scheduled recurring system maintenance tasks.</li>
-        <li>Implemented PowerShell scripts for automation.</li>
-        <li>Improved reliability by reducing manual effort.</li>
+      <p>
+        This project involved setting up Active Directory Domain Services (AD DS) on a Windows Server 2016 VM, 
+        designating it as the Domain Controller for the <code>savn.local</code> network, and joining two additional VMs 
+        (Server 2022 and Windows 10) to the domain. The configuration also required DNS setup and validation of domain membership.
+      </p>
+      <img src="images/project1.png" alt="Screenshot of Active Directory setup in Windows Server Manager">
+    </section>
+
+    <section>
+      <h2>Key Steps</h2>
+      <ul>
+        <li>Installed AD DS and DNS Server roles on Windows Server.</li>
+        <li>Promoted the server to a Domain Controller for the <code>savn.local</code> domain.</li>
+        <li>Joined additional Windows Server and Windows 10 VMs to the domain.</li>
+        <li>Verified successful configuration using Active Directory Users and Computers (ADUC).</li>
       </ul>
     </section>
 
-    <section class="card">
-      <h2>Examples</h2>
-      <figure>
-        <img src="images/project1_taskscheduler.png" alt="Task Scheduler screenshot" width="800">
-        <figcaption>Task Scheduler setup example</figcaption>
-      </figure>
-      <figure>
-        <img src="images/project1_script.png" alt="PowerShell script screenshot" width="800">
-        <figcaption>PowerShell script example</figcaption>
-      </figure>
+    <section>
+      <h2>Skills Learned</h2>
+      <ul>
+        <li>Windows Server administration and role management</li>
+        <li>Active Directory Domain Services (AD DS) configuration</li>
+        <li>DNS setup and troubleshooting</li>
+        <li>Joining and managing computers in a domain</li>
+        <li>System administration best practices (naming conventions, connectivity checks)</li>
+      </ul>
     </section>
   </main>
 </body>
