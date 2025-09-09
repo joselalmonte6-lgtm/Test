@@ -1,40 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Project 2 — Theater Inventory System</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8">
+  <title>Project 2: Theater Inventory System</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1>Project 2 — Theater Inventory System (Hash Tables in C)</h1>
-      <nav><a href="index.html">← Back to Resume</a></nav>
-    </div>
+  <header>
+    <h1>Project 2: Theater Inventory System (Hash Tables)</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="project1.html">Project 1</a>
+      <a href="project2.html">Project 2</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <section class="card">
+  <main>
+    <section>
       <h2>Overview</h2>
-      <p>This project simulates a theater’s inventory system using hash tables with separate chaining in C.</p>
-      <ul class="bullets">
-        <li>Supports buying supplies, selling items, and updating prices.</li>
-        <li>Tracks cash balance across all operations.</li>
-        <li>Computes total complexity of operations.</li>
+      <p>
+        Implemented a C program to simulate a theater’s inventory system using a hash table with separate chaining. 
+        The program supports buying items, selling products, and updating prices while tracking cash flow and operation complexity. 
+        This system was designed to handle up to 300,000 commands efficiently with amortized O(1) operations.
+      </p>
+      <img src="images/Project_2.png" alt="CLI screenshot of Theater Inventory program">
+    </section>
+
+    <section>
+      <h2>Features</h2>
+      <ul>
+        <li>Buy supplies from suppliers at wholesale prices.</li>
+        <li>Sell items to customers with inventory tracking.</li>
+        <li>Update item sale prices dynamically.</li>
+        <li>Log inventory changes and calculate total complexity of operations.</li>
+        <li>Final report showing total cash and operation complexity.</li>
       </ul>
     </section>
 
-    <section class="card">
-      <h2>Examples</h2>
-      <figure>
-        <img src="images/project2_sampleinput.png" alt="Sample input screenshot" width="800">
-        <figcaption>Example input commands</figcaption>
-      </figure>
-      <figure>
-        <img src="images/project2_sampleoutput.png" alt="Sample output screenshot" width="800">
-        <figcaption>Program output example</figcaption>
-      </figure>
+    <section>
+      <h2>Skills Learned</h2>
+      <ul>
+        <li>Data structures: hash tables with separate chaining</li>
+        <li>Efficient memory management and dynamic allocation in C</li>
+        <li>File I/O for command processing</li>
+        <li>Algorithmic analysis of complexity</li>
+        <li>Simulation of real-world systems using structured programming</li>
+      </ul>
     </section>
   </main>
 </body>
